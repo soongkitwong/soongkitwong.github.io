@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #fbf7ef;
   --surface: #ffffff;
   --surface-muted: #f1eee7;
@@ -301,10 +301,12 @@ h3 {
   overflow: hidden;
 }
 
-.research-visual {
+.headshot {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 18%;
+  background: var(--surface-muted);
 }
 
 .quick-facts {
@@ -462,12 +464,41 @@ h3 {
   color: var(--ink-soft);
 }
 
+.awards-panel {
+  border-top: 1px solid var(--line);
+  margin-top: 52px;
+  padding-top: 34px;
+}
+
 .teaching-list {
   list-style: none;
   display: grid;
   gap: 16px;
   margin: 0;
   padding: 0;
+}
+
+.award-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.award-list li {
+  border-left: 3px solid var(--gold);
+  padding-left: 16px;
+}
+
+.award-list strong,
+.award-list span {
+  display: block;
+}
+
+.award-list span {
+  color: var(--ink-soft);
 }
 
 .teaching-list li {
@@ -495,6 +526,13 @@ h3 {
   border-radius: var(--radius);
   background: var(--surface);
   padding: 30px;
+}
+
+.cv-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
 }
 
 .contact-section {
@@ -553,7 +591,8 @@ h3 {
     padding-top: 54px;
   }
 
-  .research-list {
+  .research-list,
+  .award-list {
     grid-template-columns: 1fr;
   }
 
@@ -564,6 +603,10 @@ h3 {
   .cv-panel {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .cv-links {
+    justify-content: flex-start;
   }
 }
 
@@ -600,7 +643,8 @@ h3 {
   }
 
   .hero-actions,
-  .contact-actions {
+  .contact-actions,
+  .cv-links {
     align-items: stretch;
     flex-direction: column;
   }

@@ -1,22 +1,22 @@
-# Economics Job Market Website
+# Soong Kit Wong Job Market Website
 
-Static, GitHub Pages-ready academic job market site inspired by the simple economics profile structure at `garrettshost.com`.
+Static, GitHub Pages-ready academic job market site for Soong Kit Wong.
 
-## Edit Before Publishing
+## Current Assets
 
-Replace the placeholders in `index.html`:
+- `index.html`: main site page
+- `styles.css`: site styling
+- `script.js`: mobile navigation and email-copy behavior
+- `assets/headshot.jpg`: current headshot
+- `assets/Soong_Kit_Wong_CV_2026.pdf`: public CV PDF
+- `assets/Soong_Kit_Wong_CV_2026.docx`: editable CV source copy
 
-- `Your Name`
-- `[University Name]`
-- `[Advisor Name]`
-- `[Office Address]`
-- `your.email@university.edu`
-- education and teaching entries
-- paper links once drafts/slides are public
+## Still Worth Updating
 
-If you have a CV PDF, save it as `assets/cv.pdf`, then change the CV button in `index.html` from `href="#cv"` to `href="assets/cv.pdf"`.
-
-If you have a headshot, add it to `assets/` and replace or supplement the current abstract research visual.
+- Add the job market paper PDF when the draft is ready.
+- Add slides if you want a separate presentation link.
+- Add Google Scholar, SSRN, LinkedIn, ORCID, or GitHub links if useful.
+- Add a `CNAME` file only after buying a custom domain.
 
 ## Local Preview
 
@@ -24,20 +24,6 @@ Open `index.html` directly in a browser. No build step is required.
 
 ## Publish With GitHub Pages
 
-1. Create a new GitHub repository for this website.
-2. Upload the contents of this folder to the repository root.
-3. In GitHub, go to `Settings` -> `Pages`.
-4. Set `Build and deployment` to `Deploy from a branch`.
-5. Set the branch to `main` and folder to `/root`.
-6. Save.
+This repository is intended to publish from the `main` branch at the repository root.
 
-## Add a Custom Domain
-
-After buying a domain:
-
-1. In GitHub Pages settings, add the domain under `Custom domain`.
-2. GitHub will create a `CNAME` file, or you can create one containing only your domain, for example `yourname.com`.
-3. At your domain registrar, point DNS to GitHub Pages using GitHub's current Pages DNS instructions.
-4. Enable `Enforce HTTPS` once DNS is verified.
-
-Do not commit a fake `CNAME` before you own the domain.
+In GitHub, go to `Settings` -> `Pages`, choose `Deploy from a branch`, then set branch `main` and folder `/root`.
