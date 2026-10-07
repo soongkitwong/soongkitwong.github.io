@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soongkitwong.github.io/sitemap.xml
